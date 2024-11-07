@@ -1,0 +1,87 @@
+{
+  "protoPayload": {
+    "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+    "status": {},
+    "authenticationInfo": {
+      "principalEmail": "jameszy1120@gmail.com",
+      "principalSubject": "user:jameszy1120@gmail.com"
+    },
+    "requestMetadata": {
+      "callerIp": "34.148.201.187",
+      "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.service-accounts.add-iam-policy-binding invocation-id/a438d1c7527749ec8671916871f57ee1 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+      "requestAttributes": {
+        "time": "2024-11-07T01:40:05.768032288Z",
+        "auth": {}
+      },
+      "destinationAttributes": {}
+    },
+    "serviceName": "iam.googleapis.com",
+    "methodName": "google.iam.admin.v1.SetIAMPolicy",
+    "authorizationInfo": [
+      {
+        "resource": "projects/-/serviceAccounts/101474740979173368956",
+        "permission": "iam.serviceAccounts.setIamPolicy",
+        "granted": true,
+        "resourceAttributes": {
+          "name": "projects/-/serviceAccounts/101474740979173368956"
+        },
+        "permissionType": "ADMIN_WRITE"
+      }
+    ],
+    "resourceName": "projects/-/serviceAccounts/101474740979173368956",
+    "serviceData": {
+      "@type": "type.googleapis.com/google.iam.v1.logging.AuditData",
+      "policyDelta": {
+        "bindingDeltas": [
+          {
+            "action": "ADD",
+            "role": "roles/iam.workloadIdentityUser",
+            "member": "principalSet://iam.googleapis.com/projects/89603171660/locations/global/workloadIdentityPools/jameszy1120/attribute.repository/Jameszy007/build-and-push-image-Jameszy007"
+          }
+        ]
+      }
+    },
+    "request": {
+      "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
+      "policy": {
+        "etag": "ACAB",
+        "bindings": [
+          {
+            "role": "roles/iam.workloadIdentityUser",
+            "members": [
+              "principalSet://iam.googleapis.com/projects/89603171660/locations/global/workloadIdentityPools/jameszy1120/attribute.repository/Jameszy007/build-and-push-image-Jameszy007"
+            ]
+          }
+        ],
+        "version": 3
+      },
+      "resource": "projects/plated-mystery-328221/serviceAccounts/github-actions-yz@plated-mystery-328221.iam.gserviceaccount.com"
+    },
+    "response": {
+      "etag": "BwYmSLa/FZ0=",
+      "@type": "type.googleapis.com/google.iam.v1.Policy",
+      "version": 1,
+      "bindings": [
+        {
+          "role": "roles/iam.workloadIdentityUser",
+          "members": [
+            "principalSet://iam.googleapis.com/projects/89603171660/locations/global/workloadIdentityPools/jameszy1120/attribute.repository/Jameszy007/build-and-push-image-Jameszy007"
+          ]
+        }
+      ]
+    }
+  },
+  "insertId": "1grg0qhe82056",
+  "resource": {
+    "type": "service_account",
+    "labels": {
+      "email_id": "github-actions-yz@plated-mystery-328221.iam.gserviceaccount.com",
+      "unique_id": "101474740979173368956",
+      "project_id": "plated-mystery-328221"
+    }
+  },
+  "timestamp": "2024-11-07T01:40:05.465557212Z",
+  "severity": "NOTICE",
+  "logName": "projects/plated-mystery-328221/logs/cloudaudit.googleapis.com%2Factivity",
+  "receiveTimestamp": "2024-11-07T01:40:06.353396501Z"
+}
